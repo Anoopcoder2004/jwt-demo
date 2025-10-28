@@ -55,7 +55,6 @@ public class AuthService {
                 .password(user.getPassword())
                 .authorities(user.getRole())
                 .build();
-
         return jwtService.generateToken(userDetails);
     }
 }
